@@ -1,7 +1,8 @@
 import mongoose from 'mongoose';
 
 export interface DisabledFeatures {
-	s3: boolean
+	s3: boolean;
+	spr: boolean;
 }
 
 export interface Config {
@@ -48,5 +49,8 @@ export interface Config {
 			secret: string;
 		};
 		disk_path: string;
+	};
+	spr: {
+		enabled: boolean;
 	};
 }
